@@ -9,8 +9,10 @@ install:
   - sudo dpkg -i hugo*.deb
   - npm i
 script:
+  - git config user.email ${EMAIL}
+  - git config user.name ${USER}
   - git checkout -b new_website_content
   - node .
   - git add docs/
   - git commit -m "Generate content of website by Hugo with TravisCI"
-  - git push origin new_website_content
+  - git push "https://${TRAVIS_SECURE_TOKEN_NAME}@https://github.com/devsheder/blockchainsociete.org.git" new_website_content
