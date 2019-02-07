@@ -12,5 +12,5 @@ script:
   - git checkout -b new_website_content
   - node .
   - git add docs/
-  - git ci -m "Generate content of website by Hugo with TravisCI"
+  - git commit -m "Generate content of website by Hugo with TravisCI"
   - git push origin new_website_content
