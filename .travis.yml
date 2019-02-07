@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "11"
 before_install:
-  - npm i -g npm
+  - sudo apt-get update libstdc
 cache: npm
 install:
   - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_extended_0.54.0_Linux-64bit.deb
