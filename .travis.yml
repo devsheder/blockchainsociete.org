@@ -13,6 +13,6 @@ script:
   - git config user.name ${USER}
   - git checkout -b new_website_content
   - node .
-  - git add docs/
+  - git add docs/ data/
   - git commit -m "Generate content of website by Hugo with TravisCI"
   - git push "https://${TRAVIS_SECURE_TOKEN_NAME}@github.com/devsheder/blockchainsociete.org.git" new_website_content
