@@ -15,4 +15,4 @@ script:
   - node .
   - git add docs/
   - git commit -m "Generate content of website by Hugo with TravisCI"
-  - git push "https://${TRAVIS_SECURE_TOKEN_NAME}@https://github.com/devsheder/blockchainsociete.org.git" new_website_content
+  - git push "https://${TRAVIS_SECURE_TOKEN_NAME}@github.com/devsheder/blockchainsociete.org.git" new_website_content
